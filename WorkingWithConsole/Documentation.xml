@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WorkingWithConsole</name>
+    </assembly>
+    <members>
+        <member name="M:WorkingWithConsole.Program.Main(System.String[])">
+            <summary>
+            Програма запускається в 
+            даній функції
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:WorkingWithConsole.Program.Execute">
+            <summary>
+            Логіка програми
+            </summary>
+        </member>
+        <member name="M:WorkingWithConsole.Program.GetComputerInfo">
+            <summary>
+            Отримати відомості про поточний
+            комп'ютер
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WorkingWithConsole.User">
+            <summary>
+            Клас користувача
+            </summary>
+        </member>
+        <member name="P:WorkingWithConsole.User.FirstName">
+            <summary>
+            Властивість для
+            доступу до зміної,
+            в якій зберігається ім'я
+            </summary>
+        </member>
+        <member name="P:WorkingWithConsole.User.SurName">
+            <summary>
+            Властивість для
+            доступу до зміної,
+            в якій зберігається прізвише
+            </summary>
+        </member>
+        <member name="P:WorkingWithConsole.User.Age">
+            <summary>
+            Властивість для
+            доступу до зміної,
+            в якій зберігається вік
+            </summary>
+        </member>
+        <member name="M:WorkingWithConsole.User.#ctor">
+            <summary>
+            Використовується для створення 
+            об'єкту користувача 
+            з значеннями за замовчуванням
+            </summary>
+        </member>
+        <member name="M:WorkingWithConsole.User.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Використовується для створення 
+            об'єкту користувача 
+            з вказаними значеннями 
+            </summary>
+        </member>
+        <member name="M:WorkingWithConsole.User.ToString">
+            <summary>
+            Виведення інформації про користувача
+            </summary>
+            <returns>
+            Виводиться в форматі:
+            Ім'я, Прізвище, Вік
+            </returns>
+        </member>
+    </members>
+</doc>
