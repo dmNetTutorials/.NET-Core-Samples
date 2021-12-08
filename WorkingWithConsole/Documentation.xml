@@ -72,5 +72,14 @@
             Ім'я, Прізвище, Вік
             </returns>
         </member>
+        <member name="M:WorkingWithConsole.User.Clone">
+            <summary>
+            Метод призначений для створення
+            незалежної копії об'єкта
+            </summary>
+            <returns>
+            Копію користувача
+            </returns>
+        </member>
     </members>
 </doc>

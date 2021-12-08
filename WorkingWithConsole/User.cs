@@ -9,7 +9,7 @@ namespace WorkingWithConsole
     /// <summary>
     /// Клас користувача
     /// </summary>
-    public class User
+    public class User : ICloneable
     {
         #region Fields
 
@@ -118,6 +118,34 @@ namespace WorkingWithConsole
         public override string ToString()
         {
             return $"\nІмя:\t{FirstName}\nПрізвище:\t{SurName}\nВік:\t{Age}\n";
+        }
+
+        public bool SendMessage(User reciever)
+        {
+            string message = "TExt";
+
+            IMail mail = new Mail();
+
+            mail.SendTo(reciever);
+
+            return false;
+        }
+
+        /// <summary>
+        /// Метод призначений для створення
+        /// незалежної копії об'єкта
+        /// </summary>
+        /// <returns>
+        /// Копію користувача
+        /// </returns>
+        public object Clone()
+        {
+            return new User()
+            {
+                Age = this.Age,
+                FirstName = this.FirstName,
+                SurName = this.SurName,
+            };
         }
 
         #endregion

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToCTS", "IntroductionToCTS.csproj", "{45E5F1D9-113D-4B8B-8B89-E1331C50B87E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45E5F1D9-113D-4B8B-8B89-E1331C50B87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E5F1D9-113D-4B8B-8B89-E1331C50B87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E5F1D9-113D-4B8B-8B89-E1331C50B87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E5F1D9-113D-4B8B-8B89-E1331C50B87E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14F41ED9-1BC4-482F-9D4C-9E410CEAA576}
+	EndGlobalSection
+EndGlobal

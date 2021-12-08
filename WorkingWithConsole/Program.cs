@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 
 namespace WorkingWithConsole
 {
     class Program
     {
+
         #region Enums
 
         enum MenuActions : byte
         {
-            VALIDATE = 1,
+            EXECUTE = 1,
             EXIT = 2
         }
 
@@ -84,7 +86,7 @@ namespace WorkingWithConsole
             }
             switch (action)
             {
-                case MenuActions.VALIDATE:
+                case MenuActions.EXECUTE:
                     Execute();
                     break;
                 case MenuActions.EXIT:
@@ -100,15 +102,21 @@ namespace WorkingWithConsole
         {
             EnterUserInfo();
 
+            IUserGroup adminsGroup = new UserGroup();
+
+            adminsGroup.AddUser(CurrentUser);
+
             Console.WriteLine(CurrentUser);
+            Console.WriteLine(AnotherUser);
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine(GetComputerInfo());
         }
 
         private static void EnterUserInfo()
         {
+
             string firstName, surName;
-            int age;
+            int age = 0;
 
             Console.WriteLine($"\nВведіть ім'я:\n");
             firstName = Console.ReadLine();
@@ -118,8 +126,6 @@ namespace WorkingWithConsole
 
             Console.WriteLine($"\nВведіть вік:\n");
             int.TryParse(Console.ReadLine(), out age);
-
-            CurrentUser = new User(firstName, surName, age);
 
             // Альтернативна версія створення користувача
             //CurrentUser = new User()
