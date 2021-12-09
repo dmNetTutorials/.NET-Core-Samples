@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference  Include="TestNetStandard.dll" Version="1.0.0">
+			<HintPath>TestNetStandard.dll</HintPath>
+		</Reference >
+	</ItemGroup>
+
+</Project>
